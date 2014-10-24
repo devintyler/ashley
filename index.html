@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arabian Fantasy</title>
+        <!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <a href="index.html"><img src="img/TitleHeader.png" height="140px" width="90%"></a>
+            </div>
+            <div id="content">
+                <div id="controls">
+                    <div class="pic1">
+                        <img src="img/icons/BurkaIcon.png" onmouseover="this.src='img/icons/hover/BurkaIconGLOW.png'" onmouseout="this.src='img/icons/BurkaIcon.png'" height="230px" width="auto">
+                    </div>
+                    <div class="pic2">
+                        <img src="img/icons/WarTornIcon.png" onmouseover="this.src='img/icons/hover/WarTornIconGLOW.png'" onmouseout="this.src='img/icons/WarTornIcon.png'"  height="230px" width="auto">
+                    </div>
+                    <div class="pic3">
+                        <img src="img/icons/JasmineIcon.png" onmouseover="this.src='img/icons/hover/JasmineIconGLOW.png'" onmouseout="this.src='img/icons/JasmineIcon.png'"  height="220px" width="auto">
+                    </div>
+                    <div class="pic4">
+                        <img src="img/icons/KimKIcon.png" onmouseover="this.src='img/icons/hover/KimKIconGLOW.png'" onmouseout="this.src='img/icons/KimKIcon.png'"  height="230px" width="auto">
+                    </div>
+                    <div class="pic5">
+                        <img src="img/icons/AmericanIcon.png" onmouseover="this.src='img/icons/hover/AmericanIconGLOW.png'" onmouseout="this.src='img/icons/AmericanIcon.png'"  height="230px" width="auto">
+                    </div>
+                    <div id="avatar">
+                        <img class="opaque" src="img/pose/AmericanGirl1.png" height="630px">
+                        <img src="img/pose/Burka1.png" style="left:-20px;" height="630px">
+                        <img src="img/pose/WarTorn1.png" height="630px">
+                        <img src="img/pose/Jasmine1.png" style="left:-20px;" height="630px">
+                        <img src="img/pose/KimK1.png" style="top:-20px;" height="630px">
+                        <img src="img/pose/AmericanGirl1.png" height="630px">
+                    </div>
+                    <div id="reset">
+                        <a href="index.html"><img src="img/ResetStar.png" height="150px"></a>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <script src="jquery-1.11.1.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+              $("#controls").on('click', 'div', function() {
+                $("#avatar img").removeClass("opaque");
+
+                var newImage = $(this).index() + 1;
+                
+                $("#avatar img").eq(newImage).addClass("opaque");
+
+                $("#reset").addClass("opaque");
+              });
+            });
+        </script>
+        <script type="text/javascript">
+            // function hover(element) {
+            //     element.setAttribute('src', 'img/icons/hover/');
+            // }
+            // function unhover(element) {
+            //     element.setAttribute('src', 'http://dummyimage.com/100x100/000/fff');
+            // }
+        </script>
+    </body>
+</html>
