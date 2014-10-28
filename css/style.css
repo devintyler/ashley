@@ -173,6 +173,76 @@ p {
           filter: alpha(opacity=1);
         }
 
+    #choose {
+        float: right;
+        position: absolute;
+        margin-top: 325px;
+        margin-left: 62%;
+        z-index: 1;
+    }
+
+        #choose.hidden {
+            opacity: 0;
+        }
+
+    #leftArrow {
+        float: left;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 35%;
+        z-index: 2;
+        opacity: 0;
+    }
+
+        #leftArrow.opaque {
+            opacity: 1;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=1);
+        }
+
+    #rightArrow {
+        float: right;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 60%;
+        z-index: 2;
+        opacity: 0;
+    }
+
+        #rightArrow.opaque {
+            opacity: 1;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=1);
+        }
+
+    #leftText {
+        float: left;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 15%;
+        opacity: 0;
+    }
+
+        #leftText.opaque {
+            opacity: 1;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=1);
+        }
+
+    #rightText {
+        float: right;
+        position: absolute;
+        margin-top: 400px;
+        margin-left: 80%;
+        opacity: 0;
+    }
+
+        #rightText.opaque {
+            opacity: 1;
+            -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: alpha(opacity=1);
+        }
+
     #reset {
         float: right;
         z-index: 2;
