@@ -34,6 +34,9 @@ function change() {
 $('.pic1').on({'click': function(){ // code for pic 1
         $('.opaque').attr('src','img/pose/Burka1.png');
 
+        $('#leftArrow img').attr('title','');
+        $('#rightArrow img').attr('title','img/pose/Burka2.png')
+
         change();
     }
 });
@@ -69,4 +72,18 @@ $('.pic5').on({'click': function(){ // code for pic 1
 $('#reset').on({'click': function(){ // code for reset
         $('.opaque').attr('src','img/pose/AmericanGirl1.png');
     }
-})
+});
+
+$('#leftArrow').on({'click': function(){
+        
+    }
+});
+
+$('#rightArrow').on({'click': function(){
+        var rightImg = $('#rightArrow img');
+
+        $('.opaque').attr('src',function() {
+            return rightImg.title;
+        })
+    }
+});

@@ -15,6 +15,7 @@ body {
     font-size: 14px;
     color:#fff;
     width: 100vw;
+    min-height: 905px;
     height: 100vh;
     /*background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
@@ -246,7 +247,7 @@ p {
     #reset {
         float: right;
         z-index: 2;
-        margin-top: 50vh;
+        margin-top: 470px;
         margin-right: 10px;
         opacity: 0;
     }
