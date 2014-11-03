@@ -9,37 +9,62 @@
         <div id="wrapper">
             <div id="header">
                 <a href="index.html"><img src="img/TitleHeader.png" height="140px" width="90%"></a>
+                <audio autoplay="" controls="" loop="" preload="">
+                 <source src="audio/Background.mp3"></source>
+                 <!-- add ogg support -->
+                 Your browser does not support the audio element.
+                </audio>
+                <audio id="burkaSound">
+                  <source src="audio/Burka.mp3">
+                  <source src="audio/Burka.ogg">
+                </audio>
+                <audio id="warTornSound">
+                  <source src="audio/WarTorn.mp3">
+                  <source src="audio/WarTorn.ogg">
+                </audio>
+                <audio id="jasmineSound">
+                  <source src="audio/Jasmine.mp3">
+                  <source src="audio/Jasmine.ogg">
+                </audio>
+                <audio id="kimKSound">
+                  <source src="audio/KimK.mp3">
+                  <source src="audio/KimK.ogg">
+                </audio>
+                <audio id="americanGirlSound">
+                  <source src="audio/AmericanGirl.mp3">
+                  <source src="audio/AmericanGirl.ogg">
+                </audio>
             </div>
             <div id="content">
                 <div class="pic1">
-                    <img src="img/icons/BurkaIcon.png" onmouseover="this.src='img/icons/hover/BurkaIconGLOW.png'" onmouseout="this.src='img/icons/BurkaIcon.png'" height="230px" width="auto">
+                    <img src="img/icons/BurkaIcon.png" onclick="document.getElementById('burkaSound').play()" onmouseover="this.src='img/icons/hover/BurkaIconGLOW.png'" onmouseout="this.src='img/icons/BurkaIcon.png'" height="230px" width="auto">
                 </div>
                 <div class="pic2">
-                    <img src="img/icons/WarTornIcon.png" onmouseover="this.src='img/icons/hover/WarTornIconGLOW.png'" onmouseout="this.src='img/icons/WarTornIcon.png'"  height="230px" width="auto">
+                    <img src="img/icons/WarTornIcon.png" onclick="document.getElementById('warTornSound').play()" onmouseover="this.src='img/icons/hover/WarTornIconGLOW.png'" onmouseout="this.src='img/icons/WarTornIcon.png'"  height="230px" width="auto">
                 </div>
                 <div class="pic3">
-                    <img src="img/icons/JasmineIcon.png" onmouseover="this.src='img/icons/hover/JasmineIconGLOW.png'" onmouseout="this.src='img/icons/JasmineIcon.png'"  height="220px" width="auto">
+                    <img src="img/icons/JasmineIcon.png" onclick="document.getElementById('jasmineSound').play()" onmouseover="this.src='img/icons/hover/JasmineIconGLOW.png'" onmouseout="this.src='img/icons/JasmineIcon.png'"  height="220px" width="auto">
                 </div>
                 <div class="pic4">
-                    <img src="img/icons/KimKIcon.png" onmouseover="this.src='img/icons/hover/KimKIconGLOW.png'" onmouseout="this.src='img/icons/KimKIcon.png'"  height="230px" width="auto">
+                    <img src="img/icons/KimKIcon.png" onclick="document.getElementById('kimKSound').play()" onmouseover="this.src='img/icons/hover/KimKIconGLOW.png'" onmouseout="this.src='img/icons/KimKIcon.png'"  height="230px" width="auto">
                 </div>
                 <div class="pic5">
-                    <img src="img/icons/AmericanIcon.png" onmouseover="this.src='img/icons/hover/AmericanIconGLOW.png'" onmouseout="this.src='img/icons/AmericanIcon.png'"  height="230px" width="auto">
+                    <img src="img/icons/AmericanIcon.png" onclick="document.getElementById('americanGirlSound').play()" onmouseover="this.src='img/icons/hover/AmericanIconGLOW.png'" onmouseout="this.src='img/icons/AmericanIcon.png'"  height="230px" width="auto">
                 </div>
                 <div id="leftText">
                     <img src="">
                 </div>
                 <div id="leftArrow">
-                    <img title="" src="img/LeftArrow.png" onmouseover="this.src='img/LeftArrowGLOW.png'" onmouseout="this.src='img/LeftArrow.png'" height="110px">
+                    <img id="left" title="" src="img/LeftArrow.png" onmouseover="this.src='img/LeftArrowGLOW.png'" onmouseout="this.src='img/LeftArrow.png'" height="110px">
                 </div>
-                <div id="avatar">
+                <div id="avatar" title="">
                     <img class="opaque" src="img/pose/UnderwearBase.png" height="630px">
                 </div>
                 <div id="choose">
                     <img class="opaque2" src="img/ChooseStar.png" height="275px">
                 </div>
                 <div id="rightArrow">
-                    <img title="" src="img/RightArrow.png" onmouseover="this.src='img/RightArrowGLOW.png'" onmouseout="this.src='img/RightArrow.png'" height="110px">
+                    <img id="right" title="" src="img/RightArrow.png" onmouseover="this.src='img/RightArrowGLOW.png'" onmouseout="this.src='img/RightArrow.png'" height="110px">
                 </div>
                 <div id="leftText">
                     <img src="">
