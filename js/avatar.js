@@ -32,7 +32,6 @@ function change() {
 }
 
 $('.pic1').on({'click': function(){ // code for pic 1
-        playSound
         $('.opaque').attr('src','img/pose/Burka1.png');
         $('.opaque').attr('title','Burka1');
 
@@ -87,10 +86,10 @@ $('.pic5').on({'click': function(){ // code for pic 1
     }
 });
 
-$('#reset').on({'click': function(){ // code for reset
-        $('.opaque').attr('src','img/pose/UnderwearBase.png');
-    }
-});
+// $('#reset').on({'click': function(){ // code for reset
+//         $('.opaque').attr('src','img/pose/UnderwearBase.png');
+//     }
+// });
 
 $('#leftArrow').on({'click': function(){
         var imgTitle = document.getElementById("left").getAttribute('title');

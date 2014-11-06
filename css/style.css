@@ -15,7 +15,7 @@ body {
     font-size: 14px;
     color:#fff;
     width: 100vw;
-    min-height: 905px;
+    min-height: 890px;
     height: 100vh;
     /*background-image: url(../img/background.jpg);
     background-repeat: no-repeat;
@@ -147,11 +147,11 @@ p {
     /* Avatar */
 
     #avatar {
-        width:200px;
+        width: 200px;
         position: relative;
         margin-left: auto;
         margin-right: auto;
-        left: -100px;
+        left: -120px;
         top: 160px;
         /*border: 1px solid #999;*/
     }
