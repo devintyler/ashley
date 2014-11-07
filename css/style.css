@@ -55,6 +55,7 @@ p {
         /*border: solid 1px;
         border-radius: 1em;*/
         min-height: 170px;
+        z-index: 2;
         margin-bottom: -210px;
         cursor: pointer;
     }
@@ -74,6 +75,7 @@ p {
         /*border: solid 1px;
         border-radius: 1em;*/
         min-height: 170px;
+        z-index: 2;
         margin-bottom: -200px;
         cursor: pointer;
     }
@@ -153,6 +155,7 @@ p {
         margin-right: auto;
         left: -120px;
         top: 160px;
+        z-index: 1;
         /*border: 1px solid #999;*/
     }
 
@@ -218,9 +221,12 @@ p {
 
     #leftText {
         float: left;
+        display: block;
         position: absolute;
-        margin-top: 400px;
-        margin-left: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 16%;
+        top: 570px;
         opacity: 0;
     }
 
@@ -232,9 +238,12 @@ p {
 
     #rightText {
         float: right;
+        display: block;
         position: absolute;
-        margin-top: 400px;
-        margin-left: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        left: 65%;
+        top: 480px;
         opacity: 0;
     }
 

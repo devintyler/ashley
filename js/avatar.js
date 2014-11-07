@@ -38,6 +38,9 @@ $('.pic1').on({'click': function(){ // code for pic 1
         $('#leftArrow img').attr('title','Burka3');
         $('#rightArrow img').attr('title','Burka2');
 
+        $('#leftText img').attr('src','img/stars/single/BurkaL.png');
+        $('#rightText img').attr('src','img/stars/single/BurkaR.png');
+
         change();
     }
 });
@@ -48,6 +51,9 @@ $('.pic2').on({'click': function(){ // code for pic 1
 
         $('#leftArrow img').attr('title','WarTorn3');
         $('#rightArrow img').attr('title','WarTorn2');
+
+        $('#leftText img').attr('src','img/stars/single/WarTornL.png');
+        $('#rightText img').attr('src','img/stars/single/WarTornR.png');
 
         change();
     }
@@ -60,6 +66,9 @@ $('.pic3').on({'click': function(){ // code for pic 1
         $('#leftArrow img').attr('title','Jasmine3');
         $('#rightArrow img').attr('title','Jasmine2');
 
+        $('#leftText img').attr('src','img/stars/single/JasmineL.png');
+        $('#rightText img').attr('src','img/stars/single/JasmineR.png');
+
         change();
     }
 });
@@ -71,6 +80,9 @@ $('.pic4').on({'click': function(){ // code for pic 1
         $('#leftArrow img').attr('title','KimK3');
         $('#rightArrow img').attr('title','KimK2');
 
+        $('#leftText img').attr('src','img/stars/single/KimL.png');
+        $('#rightText img').attr('src','img/stars/single/KimR.png');
+
         change();
     }
 });
@@ -81,6 +93,9 @@ $('.pic5').on({'click': function(){ // code for pic 1
 
         $('#leftArrow img').attr('title','AmericanGirl3');
         $('#rightArrow img').attr('title','AmericanGirl2');
+
+        $('#leftText img').attr('src','img/stars/single/AmericaL.png');
+        $('#rightText img').attr('src','img/stars/single/AmericaR.png');
 
         change();
     }
